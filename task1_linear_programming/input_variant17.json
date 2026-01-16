@@ -1,0 +1,14 @@
+{
+  "description": "Вариант 17: Задача линейного программирования",
+  "problem_statement": "Максимизировать Z = x1 + 3x2 + 2x3 + x4 при условиях: x1 + x2 + 2x4 <= 8, x2 + x3 + x4 = 6, 2x1 + x3 >= 2, x1,x2,x3,x4 >= 0",
+  "maximize": true,
+  "objective": [1, 3, 2, 1],
+  "constraints_matrix": [
+    [1, 1, 0, 2],
+    [0, 1, 1, 1],
+    [2, 0, 1, 0]
+  ],
+  "constraints_rhs": [8, 6, 2],
+  "constraint_types": ["<=", "=", ">="],
+  "variables": ["x1", "x2", "x3", "x4"]
+}
